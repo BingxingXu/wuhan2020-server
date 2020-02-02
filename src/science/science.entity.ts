@@ -3,7 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateCol
 @Entity()
 export class Science {
     @PrimaryGeneratedColumn()
-    sourceId: number;
+    id: number;
 
     @Column()
     title: string;
@@ -17,8 +17,15 @@ export class Science {
     @Column()
     content: string;
 
-    @Column()
+    @Column({
+        default: '',
+    })
     fromName: string;
+
+    @Column({
+        default: 1,
+    })
+    type: number;
 
     @CreateDateColumn()
     createdAt: Date;
