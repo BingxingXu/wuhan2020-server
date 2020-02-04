@@ -34,3 +34,7 @@ mock
 ###
 POST {{uri}}/sciences/bulk
 Content-Type: application/json
+
+# 微信数据
+###
+GET {{uri}}/weixin/config
