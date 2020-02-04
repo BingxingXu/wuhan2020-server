@@ -1,8 +1,8 @@
 import { Controller, Get, HttpService, OnModuleInit, Req, Request, Query } from '@nestjs/common';
 import { createHash } from 'crypto';
 
-const APPID = 'wx9ed52ed8359d7f25';
-const APPSECRET = '0676cb20d3176bf5afe8523ce51cd049';
+const APPID = 'wx0527d65ba3d5b901';
+const APPSECRET = '36fb36376da17747ff4243d624e265fe';
 const Token = 'test';
 const sha1 = (v: string) => {
     const hash = createHash('sha1');
