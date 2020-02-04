@@ -5,6 +5,7 @@ import { BannerModule } from './banner/banner.module';
 import { NewsModule } from './news/news.module';
 import { CountModule } from './count/count.module';
 import { ScienceModule } from './science/science.module';
+import { WeixinModule } from './weixin/weixin.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { ScienceModule } from './science/science.module';
     NewsModule,
     CountModule,
     ScienceModule,
+    WeixinModule,
   ],
 })
 export class AppModule { }
